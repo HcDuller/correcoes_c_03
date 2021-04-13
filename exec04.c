@@ -6,7 +6,7 @@
 /*   By: hde-camp <hde-camp@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 01:08:25 by hde-camp          #+#    #+#             */
-/*   Updated: 2021/04/13 02:05:03 by hde-camp         ###   ########.fr       */
+/*   Updated: 2021/04/13 16:11:13 by hde-camp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,13 @@ int	main(void)
 	strcpy(s1, "I will search for \'arc\'");
 	s2 = strstr(s1, "arc");
 	s3 = ft_strstr(s1, "arc");
+	printf("Str original:				%s\n",s1);
+	printf("Str encontrada(strstr):			%s\n",s2);
+	printf("Str encontrada(ft_strstr):		%s\n",s3);
+	printf("=======================================================================\n\n");
+	strcpy(s1, "I will search for \'il\'");
+	s2 = strstr(s1, "il");
+	s3 = ft_strstr(s1, "il");
 	printf("Str original:				%s\n",s1);
 	printf("Str encontrada(strstr):			%s\n",s2);
 	printf("Str encontrada(ft_strstr):		%s\n",s3);
